@@ -1,0 +1,8 @@
+## first install pip install pybase64
+
+
+import pybase64
+string = 'data to be encoded'
+data = pybase64.b64encode(string.encode())
+subStr = str(data).split("'")[1].split("'")[0]
+print(subStr)
